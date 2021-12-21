@@ -1,3 +1,11 @@
 body {
 	background-color: #008080;
 }
+
+p {
+	width: max-content;
+}
+
+p:hover {
+	filter: brightness(50%);
+}

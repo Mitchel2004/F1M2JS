@@ -1,0 +1,41 @@
+body {
+    background-color: #E0D0A0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#koelkast {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+section {
+    border: 2px solid #000000;
+    padding: 10px;
+    min-height: 200px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00C0FF;
+    font-size: 14px;
+    border: 2px solid #000000;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.groentestijl {
+    margin: 0 0 0 0;
+    color: #00C000;
+}
+
+.fruitstijl {
+    margin: 0 0 0 0;
+    color: #C00000;
+}

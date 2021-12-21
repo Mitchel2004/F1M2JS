@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<title>Slideshow</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Slideshow Galerij</h1>
+		<div class="button" onclick="onClickNext()">Next</div>
+		<div class="button" onclick="onClickPrevious()">Previous</div>
+		<img id="img" src="https://placekitten.com/800/600">
+		
+		<script>
+			var position = 0;
+			var img1 = "https://placekitten.com/800/600";
+			var img2 = "https://placekitten.com/805/605";
+			var img3 = "https://placekitten.com/810/610";
+			var img4 = "https://placekitten.com/815/615";
+			var img5 = "https://placekitten.com/820/620";
+			var img6 = "https://placekitten.com/825/625";
+			var img7 = "https://placekitten.com/830/630";
+			var img8 = "https://placekitten.com/835/635";
+			var img9 = "https://placekitten.com/840/640";
+			var img10 = "https://placekitten.com/845/645";
+			var imgElement = document.getElementById("img");
+			
+			function onClickNext() {
+				position = position + 1;
+				if(position == 10) {
+					position = 0;
+				}
+				setImage();
+			}
+			
+			function onClickPrevious() {
+				position = position - 1;
+				if(position == -1) {
+					position = 9;
+				}
+				setImage();
+			}
+			
+			function setImage() {
+				if(position == 0) {
+					imgElement.src = img1;
+				}
+				else if(position == 1) {
+					imgElement.src = img2;
+				}
+				else if(position == 2) {
+					imgElement.src = img3;
+				}
+				else if(position == 3) {
+					imgElement.src = img4;
+				}
+				else if(position == 4) {
+					imgElement.src = img5;
+				}
+				else if(position == 5) {
+					imgElement.src = img6;
+				}
+				else if(position == 6) {
+					imgElement.src = img7;
+				}
+				else if(position == 7) {
+					imgElement.src = img8;
+				}
+				else if(position == 8) {
+					imgElement.src = img9;
+				}
+				else if(position == 9) {
+					imgElement.src = img10;
+				}
+			}
+		</script>
+	</body>
+</html>
