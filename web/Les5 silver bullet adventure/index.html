@@ -14,6 +14,14 @@
             <div id="myTitle">Plaats 0</div>
             <input type="text" id="myInput" autocomplete="off">
             <input id="myButton" type="button" value="Voer In" onclick="getInput()">
+            <h3>Kies welke richting je op wilt:</h3>
+            <nav>
+                <button id="knopNoord" onclick="goDirection('noord')">Noord</button>
+                <button id="knopWest" onclick="goDirection('west')">West</button>
+                <button id="knopOost" onclick="goDirection('oost')">Oost</button>
+                <button id="knopZuid" onclick="goDirection('zuid')">Zuid</button>
+            </nav>
+            <img id="mapImage" src="img/map_compass.png" alt="">
         </div>
     </div>
     <script src="script.js"></script>
